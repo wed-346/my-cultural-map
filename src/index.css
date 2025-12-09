@@ -253,6 +253,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.home-author-info {
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 0.75rem;
+  border-left: 4px solid #667eea;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.home-author-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.home-author-info strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
 .home-layout {
   display: flex;
   gap: 1.5rem;
@@ -1761,16 +1781,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .card {
-    display:none;
+    border-radius: 0.875rem;
   }
 
   .card-content {
-    display:none;
-
+    padding: 0.875rem;
   }
 
   .card-title {
-    display:none;
+    font-size: 1.05rem;
   }
 
   .music-player {

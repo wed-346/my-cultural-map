@@ -28,16 +28,20 @@ function Home() {
         елемент, щоб дізнатися більше про нього та мої особисті враження.
       </p>
 
-      <div className="home-grid">
-        {items.map((item, index) => (
-          <Card 
-            key={item.id} 
-            item={item} 
-            image={item.image} 
-            onClick={() => navigate(`/item/${item.id}`)}
-            style={{ animationDelay: `${index * 0.1}s` }}
-          />
-        ))}
+      <div className="home-layout">
+        <div className="home-main-content">
+          <div className="home-grid">
+            {items.map((item, index) => (
+              <Card 
+                key={item.id} 
+                item={item} 
+                image={item.image} 
+                onClick={() => navigate(`/item/${item.id}`)}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
