@@ -62,7 +62,7 @@ function ItemPage() {
         </button>
       </div>
 
-      {/* <div className="item-page-mobile-nav">
+      <div className="item-page-mobile-nav">
         <button
           className="item-page-mobile-nav-button prev"
           onClick={() => navigate(`/item/${prevItem.id}`)}
@@ -70,12 +70,18 @@ function ItemPage() {
           ← Попередній
         </button>
         <button
+          className="item-page-mobile-nav-button home"
+          onClick={() => navigate("/")}
+        >
+          🏠
+        </button>
+        <button
           className="item-page-mobile-nav-button next"
           onClick={() => navigate(`/item/${nextItem.id}`)}
         >
           Наступний →
         </button>
-      </div> */}
+      </div>
 
       <div className="item-page-layout">
         <div className="item-page-sidebar left">

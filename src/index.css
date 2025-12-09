@@ -178,253 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: slideInUp 0.8s ease-out forwards;
 }
 
-/* Мобильная адаптация */
-@media (max-width: 640px) {
-  .home-container {
-    padding: 1rem 1rem;
-  }
-
-  .home-header-image {
-    height: 180px;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .home-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding: 0 0.5rem;
-  }
-
-  .home-intro {
-    font-size: 0.95rem;
-    padding: 1.25rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 1.25rem;
-  }
-
-  .home-grid {
-    gap: 1.25rem;
-  }
-
-  .card {
-    border-radius: 1rem;
-  }
-
-  .card-content {
-    padding: 1rem;
-  }
-
-  .card-title {
-    font-size: 1.15rem;
-  }
-
-  .card-type {
-    font-size: 0.75rem;
-    padding: 0.2rem 0.5rem;
-  }
-
-  .card-author,
-  .card-style {
-    font-size: 0.8rem;
-  }
-
-  .card-desc {
-    font-size: 0.875rem;
-    line-height: 1.6;
-  }
-
-  .item-page-container {
-    padding: 1rem;
-  }
-
-  .item-page-content {
-    padding: 1.25rem;
-    border-radius: 1.25rem;
-    margin-bottom: 0;
-  }
-
-  .item-page-image {
-    height: 20rem;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem;
-  }
-
-  .item-page-cultural-info,
-  .item-page-traits-info {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .item-page-title {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .item-page-info {
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .item-page-twitch-button {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .item-page-cultural-info,
-  .item-page-traits-info {
-    padding: 1rem;
-    border-radius: 0.75rem;
-  }
-
-  .item-page-cultural-title,
-  .item-page-traits-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .item-page-cultural-text,
-  .item-page-traits-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-
-  .item-page-description,
-  .item-page-connection {
-    padding: 1.25rem;
-    border-radius: 0.75rem;
-  }
-
-  .item-page-description-title,
-  .item-page-connection-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .item-page-description-text,
-  .item-page-connection-text {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-
-  .item-page-back-button,
-  .item-page-home-button {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.8rem;
-    height: 36px;
-    min-width: auto;
-    flex: 1;
-  }
-
-  .home-sidebar {
-    padding: 1rem;
-    border-radius: 1rem;
-  }
-
-  .home-sidebar-title {
-    font-size: 1.1rem;
-  }
-}
-
-/* Адаптация для очень маленьких экранов */
-@media (max-width: 480px) {
-  .home-container {
-    padding: 0.75rem 0.75rem;
-  }
-
-  .home-header-image {
-    height: 150px;
-    border-radius: 0.75rem;
-  }
-
-  .home-title {
-    font-size: 1.75rem;
-    line-height: 1.2;
-  }
-
-  .home-intro {
-    font-size: 0.875rem;
-    padding: 1rem 0.875rem;
-  }
-
-  .home-grid {
-    gap: 1rem;
-  }
-
-  .card {
-    border-radius: 0.875rem;
-  }
-
-  .card-content {
-    padding: 0.875rem;
-  }
-
-  .card-title {
-    font-size: 1.05rem;
-  }
-
-  .item-page-content {
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 0;
-  }
-
-  .item-page-image {
-    height: 18rem;
-    border-radius: 0.625rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .item-page-cultural-info,
-  .item-page-traits-info {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-    padding: 1rem;
-  }
-
-  .item-page-title {
-    font-size: 1.5rem;
-  }
-
-  .item-page-info {
-    font-size: 0.85rem;
-  }
-
-  .item-page-description,
-  .item-page-connection {
-    padding: 1rem;
-  }
-
-  .item-page-description-title,
-  .item-page-connection-title {
-    font-size: 1.1rem;
-  }
-
-  .item-page-description-text,
-  .item-page-connection-text {
-    font-size: 0.875rem;
-  }
-
-  .item-page-slider-button {
-    padding: 0.625rem 1rem;
-    font-size: 0.875rem;
-    min-width: auto;
-    width: 100%;
-  }
-
-  .item-page-slider-buttons {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-header-image {
-    height: 200px;
-  }
-}
+/* Ранние медиа-запросы удалены - используются оптимизированные в конце файла */
 
 .home-decorative-image {
   width: 100%;
@@ -446,9 +200,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -466,30 +220,17 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.02);
 }
 
-@media (min-width: 768px) {
-  .home-title {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home-title {
-    font-size: 4rem;
-  }
-}
-
 .home-intro {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.85;
   color: #475569;
   text-align: center;
   max-width: 52rem;
-  margin-bottom: 3rem;
-  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1rem;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 32px rgba(102, 126, 234, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
   position: relative;
@@ -530,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 .home-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
   position: relative;
@@ -605,63 +346,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   visibility: visible;
   display: block;
-}
-
-@media (min-width: 640px) {
-  .home-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .home-layout {
-    flex-direction: column;
-  }
-
-  .home-sidebar {
-    flex: 1 1 auto;
-    position: static;
-    width: 100%;
-    max-height: none;
-  }
-
-  .home-sidebar.left {
-    order: 2;
-  }
-
-  .home-sidebar.right {
-    order: 3;
-  }
-
-  .home-main-content {
-    order: 1;
-  }
-
-  .home-sidebar-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .home-sidebar .card {
-    flex: 1 1 calc(33.333% - 1rem);
-    min-width: 200px;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-sidebar .card {
-    flex: 1 1 calc(50% - 0.75rem);
-  }
 }
 
 /* Стилі для ItemPage компонента */
@@ -789,54 +473,6 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
-@media (max-width: 1024px) {
-  .item-page-layout {
-    flex-direction: column;
-  }
-
-  .item-page-sidebar {
-    flex: 1 1 auto;
-    position: static;
-    width: 100%;
-  }
-
-  .item-page-sidebar.left {
-    order: 2;
-  }
-
-  .item-page-sidebar.right {
-    order: 3;
-  }
-
-  .item-page-content {
-    order: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .item-page-sidebar {
-    display: none !important;
-  }
-
-  .item-page-layout {
-    gap: 0;
-  }
-
-  .item-page-content {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .item-page-all-items-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .item-page-mini-card {
-    flex: 1 1 calc(50% - 0.375rem);
-  }
-}
-
 .item-page-navigation {
   display: flex;
   justify-content: space-between;
@@ -846,7 +482,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   gap: 1rem;
 }
-
 
 .item-page-back-button,
 .item-page-home-button {
@@ -868,10 +503,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.item-page-back-button {
-  animation: slideInLeft 0.5s ease-out forwards;
 }
 
 .item-page-back-button::before {
@@ -925,85 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 }
 
-.item-page-mobile-nav {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .item-page-navigation {
-    flex-direction: row;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .item-page-back-button,
-  .item-page-home-button {
-    flex: 1;
-    min-width: auto;
-    padding: 0.625rem 0.75rem;
-    font-size: 0.85rem;
-    height: 38px;
-  }
-
-  .item-page-back-button {
-    padding-left: 0.5rem;
-  }
-
-  .item-page-home-button {
-    padding-right: 0.5rem;
-  }
-
-  .item-page-mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1400px;
-    margin-bottom: 1.5rem;
-    gap: 0.5rem;
-  }
-
-  .item-page-mobile-nav-button {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border-radius: 0.75rem;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .item-page-mobile-nav-button.prev {
-    background: linear-gradient(135deg, #64748b 0%, #475569 100%);
-    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
-  }
-
-  .item-page-mobile-nav-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-  }
-
-  .item-page-mobile-nav-button.prev:hover {
-    background: linear-gradient(135deg, #475569 0%, #334155 100%);
-    box-shadow: 0 6px 20px rgba(100, 116, 139, 0.4);
-  }
-
-  .item-page-mobile-nav-button.next:hover {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  }
-}
-
 .item-page-content {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -1025,28 +577,6 @@ h1, h2, h3, h4, h5, h6 {
 .item-page-content:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-  .item-page-content:hover {
-    transform: none;
-    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-
-  .item-page-cultural-info:hover,
-  .item-page-traits-info:hover,
-  .item-page-description:hover,
-  .item-page-connection:hover {
-    transform: none;
-    border-left-width: 4px;
-  }
-
-  .item-page-cultural-info:hover .item-page-cultural-title,
-  .item-page-traits-info:hover .item-page-traits-title,
-  .item-page-description:hover .item-page-description-title,
-  .item-page-connection:hover .item-page-connection-title {
-    transform: none;
-  }
 }
 
 .item-page-image {
@@ -1216,8 +746,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.85;
   }
 }
-
-/* Слайдер для опису та зв'язку */
 .item-page-slider {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -1239,7 +767,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-page-description {
-  width: 100%;
+  width: 95%;
+  margin-right: auto;
   padding: 2rem;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
   border-radius: 1rem;
@@ -1288,7 +817,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-page-connection {
-  width: 100%;
+  width: 95%;
+  margin-right: auto;
   padding: 2rem;
   background: linear-gradient(135deg, rgba(118, 75, 162, 0.05) 0%, rgba(102, 126, 234, 0.05) 100%);
   border-radius: 1rem;
@@ -1686,154 +1216,565 @@ h1, h2, h3, h4, h5, h6 {
   color: #4b5563;
 }
 /* ========================================= */
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (ВСТАВИТЬ В КОНЕЦ)       */
+/* АДАПТИВНАЯ ВЕРСТКА (MOBILE-FIRST)          */
 /* ========================================= */
 
-/* --- Планшеты и маленькие ноутбуки (до 1024px) --- */
-@media (max-width: 1024px) {
-  /* Перестраиваем макеты в одну колонку */
-  .home-layout, 
+/* --- Очень большие экраны (от 1440px) --- */
+@media (min-width: 1440px) {
+  .home-layout,
+  .item-page-layout {
+    gap: 2rem;
+  }
+
+  .home-sidebar,
+  .item-page-sidebar {
+    flex: 0 0 300px;
+  }
+}
+
+/* --- Большие ноутбуки (1024px - 1439px) --- */
+@media (min-width: 1024px) {
+  .home-container,
+  .item-page-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-layout,
+  .item-page-layout {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .home-main-content,
+  .home-sidebar,
+  .item-page-content,
+  .item-page-sidebar {
+    order: unset;
+    position: relative;
+  }
+
+  .home-sidebar,
+  .item-page-sidebar {
+    position: sticky;
+    top: 1.5rem;
+    flex: 0 0 280px;
+    height: fit-content;
+  }
+
+  .home-sidebar-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home-sidebar .card,
+  .item-page-sidebar .card {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .home-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-page-navigation {
+    flex-direction: row;
+  }
+
+  .item-page-back-button,
+  .item-page-home-button {
+    display: flex;
+    min-width: 160px;
+    height: 44px;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .item-page-back-button {
+    display: flex;
+  }
+}
+
+/* --- Планшеты и ноутбуки (768px - 1067px) --- */
+@media (min-width: 768px) and (max-width: 1067px) {
+  .home-container,
+  .item-page-container {
+    padding: 1.5rem;
+  }
+
+  .home-layout,
   .item-page-layout {
     flex-direction: column;
   }
 
-  /* Сайдбар (боковая панель) */
-  .home-sidebar, 
+  .home-main-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .home-sidebar,
   .item-page-sidebar {
+    order: 2;
     position: static;
+    flex: none;
     width: 100%;
     max-height: none;
     margin-top: 2rem;
-    order: 2; /* Опускаем сайдбар под контент */
-  }
-  
-  .home-main-content, 
-  .item-page-content {
-    width: 100%;
-    max-width: 100%;
-    order: 1; /* Контент сверху */
-  }
-
-  /* Карточки в сайдбаре выстраиваем в ряд/сетку */
-  .home-sidebar-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
   }
 
+  .item-page-sidebar {
+    display: none !important;
+  }
+
+  .item-page-sidebar-title {
+    display: none;
+  }
+
+  .home-sidebar {
+    display: none !important;
+  }
+
+  .home-sidebar-title {
+    display: none;
+  }
+
+  .home-sidebar-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .home-sidebar.left {
+    order: 2;
+  }
+
+  .home-sidebar.right {
+    order: 3;
+  }
+
   .home-sidebar .card {
-    flex: 1 1 300px; /* Адаптивная ширина карточек */
+    width: 100%;
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .item-page-image {
+    height: auto;
+    aspect-ratio: 16/9;
+    max-height: 400px;
+  }
+
+  .item-page-navigation {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .item-page-back-button,
+  .item-page-home-button {
+    flex: 1;
+    min-width: auto;
+    font-size: 0.9rem;
+    padding: 0.625rem 1rem;
+    height: 40px;
+  }
+
+  .item-page-back-button {
+    display: flex;
+  }
+
+  .item-page-content {
+    padding: 2rem;
+  }
+
+  .item-page-cultural-info,
+  .item-page-traits-info,
+  .item-page-description,
+  .item-page-connection {
+    padding: 1.5rem;
+  }
+
+  .item-page-title {
+    font-size: 2rem;
+  }
+
+  .home-header-image {
+    height: 250px;
   }
 }
 
-/* --- Мобильные телефоны и планшеты (до 768px) --- */
-@media (max-width: 768px) {
-  /* Отступы контейнера */
-  .home-container, 
+.item-page-mobile-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.item-page-mobile-nav-button {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-page-mobile-nav-button.prev {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.2);
+}
+
+.item-page-mobile-nav-button.home {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  flex: 0 0 auto;
+  min-width: 32px;
+  padding: 0.5rem;
+}
+
+.item-page-mobile-nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.item-page-mobile-nav-button.prev:hover {
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+}
+
+.item-page-mobile-nav-button.next:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.item-page-mobile-nav-button.home:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .item-page-mobile-nav {
+    display: flex;
+  }
+
+  .item-page-mobile-nav-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    height: 40px;
+  }
+
+  .item-page-mobile-nav-button.home {
+    min-width: 40px;
+    padding: 0.6rem;
+  }
+
+  .item-page-navigation {
+    display: none;
+  }
+
+  .item-page-sidebar {
+    display: none !important;
+  }
+
+  .home-container,
   .item-page-container {
     padding: 1rem;
   }
 
-  /* --- Шрифты --- */
-  .home-title {
-    font-size: 2.2rem; /* Уменьшаем огромный заголовок */
-    margin-bottom: 1rem;
-  }
-  
-  .item-page-title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    text-align: center;
+  .home-layout,
+  .item-page-layout {
+    flex-direction: column;
   }
 
-  /* --- Картинки (Исправление высоты) --- */
+  .home-main-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .home-sidebar,
+  .item-page-sidebar {
+    display: none !important;
+  }
+
+  .home-sidebar-title {
+    display: none;
+  }
+
+  .home-sidebar-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .home-sidebar .card,
+  .item-page-sidebar .card {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .home-intro {
+    font-size: 0.95rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
   .home-header-image {
-    height: 200px; /* Уменьшаем высоту шапки */
+    height: 180px;
+    border-radius: 1rem;
+  }
+
+  .item-page-navigation {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  .item-page-back-button,
+  .item-page-home-button {
+    flex: 1;
+    min-width: auto;
+    font-size: 0.65rem;
+    padding: 0.3rem 0.4rem;
+    height: 28px;
+  }
+
+  .item-page-back-button {
+    display: flex;
   }
 
   .item-page-image {
-    height: auto; /* Убираем фиксированную высоту 32rem */
-    aspect-ratio: 16/9; /* Делаем пропорциональной */
-    max-height: 400px;
-    margin-bottom: 1rem;
+    height: auto;
+    aspect-ratio: 16/9;
+    max-height: 300px;
   }
 
-  /* --- Кнопки навигации --- */
-  .item-page-navigation {
-    flex-direction: row; /* Оставляем в ряд */
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .item-page-back-button, 
-  .item-page-home-button {
-    flex: 1; /* Кнопки занимают равную ширину */
-    min-width: auto;
-    font-size: 0.85rem;
-    padding: 0.6rem;
-    height: auto; /* Высота подстраивается */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* --- Контент и блоки --- */
   .item-page-content {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
   }
 
-  .item-page-cultural-info, 
+  .item-page-cultural-info,
   .item-page-traits-info,
-  .item-page-description, 
+  .item-page-description,
   .item-page-connection {
-    padding: 1.25rem;
-    border-left-width: 4px;
+    padding: 1rem;
+    border-radius: 0.75rem;
   }
-  
-  /* Музыкальный плеер */
+
+  .item-page-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
   .music-player {
-    max-width: 100%; /* Растягиваем на всю ширину */
+    max-width: 100%;
   }
 }
 
-/* --- Маленькие экраны (до 480px) --- */
-@media (max-width: 480px) {
-  /* Еще меньше заголовки */
-  .home-title {
-    font-size: 1.8rem;
+/* --- Очень маленькие экраны (до 480px) --- */
+@media (max-width: 479px) {
+  .item-page-mobile-nav {
+    display: flex;
   }
-  
+
+  .item-page-mobile-nav-button {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    height: 36px;
+  }
+
+  .item-page-mobile-nav-button.home {
+    min-width: 36px;
+    padding: 0.5rem;
+  }
+
+  .item-page-navigation {
+    display: none;
+  }
+
+  .item-page-sidebar {
+    display: none !important;
+  }
+
+  .home-container,
+  .item-page-container {
+    padding: 0.75rem;
+  }
+
+  .home-layout,
+  .item-page-layout {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .home-main-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .home-sidebar,
+  .item-page-sidebar {
+    display: none !important;
+  }
+
+  .home-sidebar-title {
+    display: none;
+  }
+
+  .home-sidebar-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .home-sidebar .card,
+  .item-page-sidebar .card {
+    width: 100%;
+    flex: none;
+  }
+
+  .home-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .home-intro {
+    font-size: 0.875rem;
+    padding: 1rem 0.875rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home-header-image {
+    height: 150px;
+    border-radius: 0.75rem;
+  }
+
+  .item-page-navigation {
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+
+  .item-page-back-button,
+  .item-page-home-button {
+    flex: 1;
+    min-width: auto;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.3rem;
+    height: 24px;
+  }
+
+  .item-page-back-button {
+    display: none;
+  }
+
+  .item-page-image {
+    height: auto;
+    aspect-ratio: 16/9;
+    max-height: 250px;
+    border-radius: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .item-page-content {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+
+  .item-page-cultural-info,
+  .item-page-traits-info,
+  .item-page-description,
+  .item-page-connection {
+    padding: 1rem;
+    border-radius: 0.625rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
   .item-page-title {
     font-size: 1.5rem;
   }
 
-  /* Картинка шапки еще меньше */
-  .home-header-image {
-    height: 160px;
-  }
-
-  /* Кнопки слайдера - друг под другом */
   .item-page-slider-buttons {
     flex-direction: column;
-    width: 100%;
-    gap: 0.8rem;
+    gap: 0.75rem;
   }
 
   .item-page-slider-button {
-    width: 100%; /* На всю ширину */
-    justify-content: center;
+    width: 100%;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    min-width: auto;
+  }
+   .item-page-sidebar-title{
+    display: none;
+  }
+  .card {
+    display:none;
   }
 
-  /* Сетка главной страницы в 1 колонку */
-  .home-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
   .card-content {
-    padding: 1rem;
+    display:none;
+
+  }
+
+  .card-title {
+    display:none;
+  }
+
+  .music-player {
+    max-width: 100%;
+    padding: 0.75rem;
   }
 }
