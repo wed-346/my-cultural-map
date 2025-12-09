@@ -279,13 +279,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 1600px;
   align-items: flex-start;
+  justify-content: center;
   position: relative;
   z-index: 1;
 }
 
 .home-main-content {
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .home-grid {
@@ -294,6 +297,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
