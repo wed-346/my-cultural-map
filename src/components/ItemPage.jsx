@@ -15,7 +15,7 @@ function ItemPage() {
   const currentIndex = items.findIndex((i) => i.id === parseInt(id));
   const prevItem = currentIndex > 0 ? items[currentIndex - 1] : items[items.length - 1];
   const nextItem = currentIndex < items.length - 1 ? items[currentIndex + 1] : items[0];
-  const otherItems = items.filter((i) => i.id !== parseInt(id));
+
 
   const slides = [];
   if (item.description) {
@@ -62,12 +62,28 @@ function ItemPage() {
         </button>
       </div>
 
+      <div className="item-page-mobile-nav">
+        <button
+          className="item-page-mobile-nav-button prev"
+          onClick={() => navigate(`/item/${prevItem.id}`)}
+        >
+          ← Попередній
+        </button>
+        <button
+          className="item-page-mobile-nav-button next"
+          onClick={() => navigate(`/item/${nextItem.id}`)}
+        >
+          Наступний →
+        </button>
+      </div>
+
       <div className="item-page-layout">
         <div className="item-page-sidebar left">
           <h3 className="item-page-sidebar-title">Попередній</h3>
           <Card 
             item={prevItem} 
-            onClick={() => navigate(`/item/${prevItem.id}`)} 
+            onClick={() => navigate(`/item/${prevItem.id}`)}
+            hideImage={true}
           />
         </div>
 
@@ -81,6 +97,18 @@ function ItemPage() {
         {item.author && <p className="item-page-info"><strong>Автор:</strong> {item.author}</p>}
         <p className="item-page-info"><strong>Стиль/Інформація:</strong> {item.style}</p>
         <p className="item-page-info"><strong>Особисті риси:</strong> {item.personality}</p>
+        {item.twitchLink && (
+          <div className="item-page-twitch-link">
+            <a 
+              href={item.twitchLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="item-page-twitch-button"
+            >
+              📺 Переглянути на Twitch
+            </a>
+          </div>
+        )}
         {item.culturalPeriod && (
           <div className="item-page-cultural-info">
             <h3 className="item-page-cultural-title">Культурний період / Стиль</h3>
@@ -149,27 +177,9 @@ function ItemPage() {
           <h3 className="item-page-sidebar-title">Наступний</h3>
           <Card 
             item={nextItem} 
-            onClick={() => navigate(`/item/${nextItem.id}`)} 
+            onClick={() => navigate(`/item/${nextItem.id}`)}
+            hideImage={true}
           />
-          <div className="item-page-all-items">
-            <h4 className="item-page-all-items-title">Всі елементи</h4>
-            <div className="item-page-all-items-grid">
-              {otherItems.slice(0, 3).map((otherItem) => (
-                <div
-                  key={otherItem.id}
-                  className="item-page-mini-card"
-                  onClick={() => navigate(`/item/${otherItem.id}`)}
-                >
-                  <img
-                    src={otherItem.image}
-                    alt={otherItem.title}
-                    className="item-page-mini-card-image"
-                  />
-                  <p className="item-page-mini-card-title">{otherItem.title}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>
