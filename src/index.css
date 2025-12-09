@@ -1685,3 +1685,155 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   color: #4b5563;
 }
+/* ========================================= */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (ВСТАВИТЬ В КОНЕЦ)       */
+/* ========================================= */
+
+/* --- Планшеты и маленькие ноутбуки (до 1024px) --- */
+@media (max-width: 1024px) {
+  /* Перестраиваем макеты в одну колонку */
+  .home-layout, 
+  .item-page-layout {
+    flex-direction: column;
+  }
+
+  /* Сайдбар (боковая панель) */
+  .home-sidebar, 
+  .item-page-sidebar {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-top: 2rem;
+    order: 2; /* Опускаем сайдбар под контент */
+  }
+  
+  .home-main-content, 
+  .item-page-content {
+    width: 100%;
+    max-width: 100%;
+    order: 1; /* Контент сверху */
+  }
+
+  /* Карточки в сайдбаре выстраиваем в ряд/сетку */
+  .home-sidebar-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .home-sidebar .card {
+    flex: 1 1 300px; /* Адаптивная ширина карточек */
+  }
+}
+
+/* --- Мобильные телефоны и планшеты (до 768px) --- */
+@media (max-width: 768px) {
+  /* Отступы контейнера */
+  .home-container, 
+  .item-page-container {
+    padding: 1rem;
+  }
+
+  /* --- Шрифты --- */
+  .home-title {
+    font-size: 2.2rem; /* Уменьшаем огромный заголовок */
+    margin-bottom: 1rem;
+  }
+  
+  .item-page-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* --- Картинки (Исправление высоты) --- */
+  .home-header-image {
+    height: 200px; /* Уменьшаем высоту шапки */
+  }
+
+  .item-page-image {
+    height: auto; /* Убираем фиксированную высоту 32rem */
+    aspect-ratio: 16/9; /* Делаем пропорциональной */
+    max-height: 400px;
+    margin-bottom: 1rem;
+  }
+
+  /* --- Кнопки навигации --- */
+  .item-page-navigation {
+    flex-direction: row; /* Оставляем в ряд */
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .item-page-back-button, 
+  .item-page-home-button {
+    flex: 1; /* Кнопки занимают равную ширину */
+    min-width: auto;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+    height: auto; /* Высота подстраивается */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* --- Контент и блоки --- */
+  .item-page-content {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .item-page-cultural-info, 
+  .item-page-traits-info,
+  .item-page-description, 
+  .item-page-connection {
+    padding: 1.25rem;
+    border-left-width: 4px;
+  }
+  
+  /* Музыкальный плеер */
+  .music-player {
+    max-width: 100%; /* Растягиваем на всю ширину */
+  }
+}
+
+/* --- Маленькие экраны (до 480px) --- */
+@media (max-width: 480px) {
+  /* Еще меньше заголовки */
+  .home-title {
+    font-size: 1.8rem;
+  }
+  
+  .item-page-title {
+    font-size: 1.5rem;
+  }
+
+  /* Картинка шапки еще меньше */
+  .home-header-image {
+    height: 160px;
+  }
+
+  /* Кнопки слайдера - друг под другом */
+  .item-page-slider-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .item-page-slider-button {
+    width: 100%; /* На всю ширину */
+    justify-content: center;
+  }
+
+  /* Сетка главной страницы в 1 колонку */
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+}

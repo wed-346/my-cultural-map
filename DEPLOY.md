@@ -36,7 +36,7 @@ git commit -m "Initial commit"
 ## Шаг 5: Подключите к GitHub репозиторию
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/my-cultural-map.git
+git remote add origin https://github.com/wed-346/my-cultural-map
 git branch -M main
 git push -u origin main
 ```
